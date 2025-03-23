@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=DM+Serif+Text:ital@0;1&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=DM+Serif+Text:ital@0;1&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=DM+Serif+Text:ital@0;1&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+.help-block {
+    color:#287fb7;
+    font-family: "Baskervville SC", serif;
+    font-weight: 500px;
+    font-style: italic;
+    text-shadow: 2px #21295C;
+}
+
+.control-label {
+    color:#bcd2e2;
+}
+
+.irs-handle.single {
+    background: none; /* Remove default background */
+    border: none; /* Remove default border */
+    width: 30px; /* Set appropriate size for the handle */
+    height: 30px;
+    position: relative;
+    z-index: 10; /* Ensure the icon appears above the track */
+    box-shadow:none;
+}
+
+.irs-handle.single::before {
+    content: "\e4a8"; /* Unicode for the Bootstrap icon (example: a circle) */
+    font-family: "Font Awesome 6 Free"; /* Use the correct font-family for the icon library */
+    font-weight: 900; /* Adjust weight for icons that require it */
+    color: #007bff; /* Set icon color */
+    font-size: 20px; /* Adjust size of the icon */
+    position: absolute;
+    top: 20%; /* Adjust the vertical alignment */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.irs-handle.single:hover {
+    background: none !important; /* Ensure no background on hover */
+    border: none !important; /* Remove border */
+    box-shadow: none !important; /* Remove any shadow */
+    outline: none !important; /* Remove focus outlines if applied */
+}
+
+/* Optional: Hover effect for the icon */
+.irs-handle.single:hover::before {
+    color: #0056b3; /* Change icon color on hover */
+}
+
+.irs-bar.irs-bar--single {
+    background: linear-gradient(90deg, #287fb7, #5ec1ff);
+}
+
+.shiny-input-number {
+    color:#21295C;
+    background: linear-gradient(90deg, #287fb7, #5ec1ff);
+}
+
+.box.box-solid.box-danger>.box-header{
+    font-family: "Baskervville SC", serif !important;
+    font-weight: 400;
+    color:#E8F0FF ;
+    background: linear-gradient(90deg, #7e1118, #DF2935);
+    border-radius: 10px;
+
+}
+
+.box.box-solid.box-danger > .box-header > .box-title {
+    font-family: "Baskervville SC", serif, sans-serif !important;
+    font-weight: 400;
+    color: #E8F0FF;
+}
+
+.box.box-solid.box-danger {
+    background-color: rgba(14, 18, 35, 0.362);
+    
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.box.box-solid.box-primary>.box-header{
+    font-family: "Baskervville SC", serif !important;
+    font-weight: 400;
+    color:#E8F0FF ;
+    background: linear-gradient(90deg, #1b3b6f, #287fb7);
+    border-radius: 10px;
+
+}
+
+.box.box-solid.box-primary > .box-header > .box-title {
+    font-family: "Baskervville SC", serif, sans-serif !important;
+    font-weight: 400;
+    color: #E8F0FF;
+}
+
+.box.box-solid.box-primary {
+    background-color: rgba(14, 18, 35, 0.362);
+    
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+article {
+    animation: fadeIn 3s ease-in-out;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:aliceblue;
+    background-color: rgba(14, 18, 35, 0.362);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+
+
+h2 {
+    animation: fadeIn 2s ease-in-out;
+    color: #bcd2e2;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 45px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.47);
+}
+
+.main-header .logo {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    background-color: #1b3b6f !important;
+    min-height: 80px;
+    padding-top: 20px;
+}
+
+.sidebar-menu li:first-child {
+    margin-top: 50px;
+}
+
+.sidebar-menu > li > a {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.content-wrapper {
+    background-color: rgba(0, 0, 0, 0.447);
+    background-image: url('covid_fondo2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.sidebar-menu .fa {
+    font-size: 18px;
+}
+
+.skin-blue .main-header,
+.skin-blue .main-header .navbar {
+    background: linear-gradient(90deg, #1b3b6f, #287fb7);
+    min-height: 80px;
+}
+
+.primary-color {
+    background-color: #21295C;
+}
+
+.secondary-color {
+    background-color: #1B3B6F;
+}
+
+.secondary-color2 {
+    background-color: #065A82;
+}
+
+.secondary-color3 {
+    background-color: #1C7293
+}
+
+.accent-color {
+    background-color: #9EB3C2;
+}
+
+.warning-color {
+    background-color: #DF2935;
+}
+
+.positive-color {
+    background-color: #09BC8A;
+}
+
+.grays {
+    background-color: #E8F0FF;
+    color: #bcd2e2;
+}
+
+.flip-container2 {
+    perspective: 1000px;
+    display: flex;  
+    gap: 30px;  
+}
+
+.virus_imagen {
+    position: relative; /* Required for positioning the pseudo-element */
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform: translateY(0);
+}
+
+.virus_imagen::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 0, 0.5), rgba(255, 255, 0, 0));
+    z-index: -1; /* Ensures the glow is behind the image */
+    animation: pulse 3s infinite; /* Optional glow pulsing animation */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes girarLetra {
+    0% {
+        transform: rotateY(0deg);
+    }
+    40% {
+        transform: rotateY(180deg);
+    }
+    60% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}

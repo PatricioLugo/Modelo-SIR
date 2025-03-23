@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=DM+Serif+Text:ital@0;1&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+.landing-page-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background-image: url('bienvenida_fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;  
+}
+
+.flip-container1 {
+    perspective: 1000px;
+    display: flex;  
+    gap: 30px;  
+}
+
+.flip-image1 {
+    transform-style: preserve-3d;
+    animation-name: sSlideDown, girarLetra;
+    animation-duration: 3s, 12s;
+    animation-delay: 0s, 4s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: none, ease-in-out;
+    animation-fill-mode: forwards;
+    transform: rotateY(0deg);
+}
+
+.flip-image2 {
+    transform-style: preserve-3d;
+    animation-name: sSlideDown, girarLetra;
+    animation-duration: 4s, 12s;
+    animation-delay: 0s, 8s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: none, ease-in-out;
+    animation-fill-mode: forwards;
+    transform: rotateY(0deg);
+}
+
+.flip-image3 {
+    transform-style: preserve-3d;
+    animation-name: sSlideDown, girarLetra;
+    animation-duration: 5s, 13s;
+    animation-delay: 0s, 5.5s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: none, ease-in-out;
+    animation-fill-mode: forwards;
+    transform: rotateY(0deg);
+}
+
+.landing-page-content {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.landing-page-content h1 {
+    animation: fadeIn 2s ease-in-out;
+    color: #b9cbd8;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.47);
+}
+
+.landing-page-content .shiny-input-container {
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landing-page-content .btn {
+    padding: 0.5em 1em;
+    font-family: "Baskerville SC", serif;
+    background-color: #09BC8A;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #002d20;
+    cursor: pointer;
+    transition: all 0.1s ease-in 0.1s;
+}
+
+.landing-page-content .btn:hover {
+    background-color: #0cf0af;
+    transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes sSlideDown{
+    from {
+        transform: translateY(-500px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes girarLetra {
+    0% {
+        transform: rotateY(0deg);
+    }
+    40% {
+        transform: rotateY(180deg);
+    }
+    60% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
